@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JobStreet</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="header">
+		<%= render 'layouts/navigation' %>
+	
+	</div>
+	
+	<div id="content">
+		
+		<%= yield %>
+	</div>
+	
+	<div id="footer">
+		<p>Searching Job-Street | <a href="">jobs</a> by  | jobs by SimplyHired | <a href="">jobs</a> by  | USAJobs |DirectEmployers Association | and others...</p>
+		<p>About Us | Privacy Policy | Terms of Use</p>
+		<p>&reg; 2013 Job-Street.com. All rights reserved.</p>
+	</div>
+
+</body>
+</html>

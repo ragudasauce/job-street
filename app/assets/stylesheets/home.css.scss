@@ -1,0 +1,158 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+	
+	font-size: 1em;
+}
+
+#content {
+	
+	margin: auto;
+	padding-top: 0;
+	overflow: hidden;
+	width: 60.625em;
+/* 	border: 1px solid black; */
+	
+	#search_filters {
+		
+		float: left;
+		width: 14%;
+		margin: 0;
+		padding: 1%;
+		font-size: .75em;
+/* 		border: 1px solid black; */
+		
+		ul {
+			padding: 0;
+		}
+		
+		
+		li {
+			list-style-type: none;
+			line-height: 130%;
+			
+			+ li {
+				margin-top: .25em;
+			}
+			
+			
+			h2 {
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 1em;
+				margin-top: 1.75em;
+			}
+			
+			a {
+				text-decoration: none;
+				color: #0385F1;
+				
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	
+	#job_listing_wrapper {
+		float:left;
+		width: 60%;
+		margin-left: 1%;
+		margin-right: 1%;
+
+		$borderColor: #ccc;
+		border-left: 1px solid $borderColor;
+		border-right: 1px solid $borderColor;
+		
+		.order_by_filters {
+			background-color: rgb(247, 247, 247);
+			border-bottom: 1px solid $borderColor;
+			color: rgb(95, 98, 93);
+
+			font-size: .8125em;
+			
+			padding-left: percentage((15/582));
+			padding-right: percentage((15/582));
+			padding-top: 1em;
+			padding-bottom: 1em;
+			
+			span {
+				float: right;
+				
+				select {
+					display: inline;
+					margin-top: -.5em;
+				}
+			}
+		}
+		
+		#job_listings {
+			padding-left: percentage((15/582));
+			padding-right: percentage((15/582));
+			padding-top: 1em;
+			padding-bottom: 1em;
+			
+			h2 {
+				font-size: .9375em;
+				color: rgb(85, 85, 85);
+			}
+			
+			.job {
+				text-decoration: none;
+				color: rgb(68, 68, 68);
+				display: block;
+				
+				.link_blue {
+					color: rgb(3, 133, 241);
+				}
+				
+				.location {
+					font-weight: bold;
+				}
+				
+				+ .job {
+					margin-top: 2em;
+				}
+				
+				
+				h3 {
+					font-weight: normal;
+					font-size: 1em;
+					margin-bottom: 0;
+				}
+				
+				&:hover h3.link_blue {
+					color: rgb(125, 186, 64);
+				}
+				
+				p {
+					font-size: .8125em;
+					margin-top: .5em;
+					margin-bottom: 0;
+					
+					.date {
+						color: rgb(170, 170, 170)
+					}
+				}
+				
+				
+			}
+			
+			
+		}
+	}
+	
+	#promotions {
+		width: 18%;
+		float: left;
+	}
+
+}
+
+#footer {
+	width: 60.625em;
+	margin: auto;
+	text-align: center;
+}

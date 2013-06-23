@@ -15,20 +15,9 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-family: 'Arial', 'Helvetica', sans-serif;
+	
+
 }
 
-#header {
-	background-color: #1f3241;
-	border-top: .625em rgb(153, 204, 51) solid;
-	padding: 2em;
-	
-	div {
-		float: left;
-		
-		label {
-			display: block;
-			
-		}
-		
-	}
-}
+require navigation.scss

@@ -1,0 +1,99 @@
+#header {
+	background-color: #1f3241;
+	border-top: .625em rgb(153, 204, 51) solid;
+	
+	#navigation {
+
+		overflow: hidden;
+		width: 60.625em;
+		margin: auto;
+		position: relative;
+		margin-top: 1.875em;
+		padding-bottom: .75em;
+		
+		#sign_up {
+			position: absolute;
+			margin: 0;
+			top:0em;
+			right: 0em;
+			font-size: .6875em;
+			
+			a {
+				
+				text-decoration: none;
+				color: white;
+			}
+		}
+		
+		div {
+		
+			float: left;
+			
+			&#logo {
+				margin-right: 1.75em;
+				margin-top: .9375em;
+			}
+			
+			&.controls {
+			
+				+ .controls {
+					margin-left: .5em;
+				}
+				
+				+ .find_job {
+					margin-left: 1.1429em;
+				}
+				
+				overflow: auto;
+				width: 18em;
+				
+
+				label {
+					display: block;
+					color: white;
+					font-weight: bold;
+					padding-bottom: .125em;
+					
+					span {
+						padding-left: .375em;
+						font-size: 70%;
+						font-weight: normal;
+						color: rgba(255, 255, 255, .6);
+					}
+				}
+				
+				input {
+					// 20px grid
+					width: 96%;
+					font-size: 1.25em;
+					border-radius: .25em;
+					padding: 2%;
+					border: none;
+					outline: none;
+				}
+			}
+		}
+		
+		.find_job {
+			background-color: #c2e065;
+			color: rgb(63, 128, 25);
+			float: left;
+			
+			font-weight: bold;
+			font-size: .875em;
+			text-shadow: 0px 1px 1px rgba(255, 255, 255, .65);
+			
+			// 14px grid
+			padding: .571428em .7142em ;
+			border-radius: .4285em;
+			background-image: -webkit-linear-gradient(#c2e065 50%, #9acb35 50%);
+			margin-top: 1.625em;
+			
+			
+			img {
+				float: right;
+				padding-left: .375em;
+			}
+		}
+	}
+}
