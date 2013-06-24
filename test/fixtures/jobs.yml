@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  created_date: MyString
+  post_date: 1
+  position: MyString
+  description: MyString
+
+two:
+  id: 1
+  created_date: MyString
+  post_date: 1
+  position: MyString
+  description: MyString

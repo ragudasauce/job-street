@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  start_range: 1
+  end_range: 1
+
+two:
+  start_range: 1
+  end_range: 1

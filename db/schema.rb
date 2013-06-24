@@ -1,0 +1,84 @@
+# encoding: UTF-8
+# This file is auto-generated from the current state of the database. Instead
+# of editing this file, please use the migrations feature of Active Record to
+# incrementally modify your database, and then regenerate this schema definition.
+#
+# Note that this schema.rb definition is the authoritative source for your
+# database schema. If you need to create the application database on another
+# system, you should be using db:schema:load, not running all the migrations
+# from scratch. The latter is a flawed and unsustainable approach (the more migrations
+# you'll amass, the slower it'll run and the greater likelihood for issues).
+#
+# It's strongly recommended to check this file into your version control system.
+
+ActiveRecord::Schema.define(:version => 20130623193852) do
+
+  create_table "companies", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "industries", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "jobs", :force => true do |t|
+    t.string   "created_date"
+    t.integer  "post_date"
+    t.string   "position"
+    t.string   "description"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "locations", :force => true do |t|
+    t.string   "street"
+    t.string   "city"
+    t.string   "state"
+    t.string   "province"
+    t.string   "country"
+    t.integer  "zip"
+    t.string   "geo_cords"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "resumes", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "resumes", ["user_id"], :name => "index_resumes_on_user_id"
+
+  create_table "salaries", :force => true do |t|
+    t.integer  "start_range"
+    t.integer  "end_range"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "saved_searches", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "keywords"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "saved_searches", ["user_id"], :name => "index_saved_searches_on_user_id"
+
+  create_table "users", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "type"
+    t.string   "email"
+    t.string   "password"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+end

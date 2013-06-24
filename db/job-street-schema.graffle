@@ -14,7 +14,7 @@
 	<key>BackgroundGraphic</key>
 	<dict>
 		<key>Bounds</key>
-		<string>{{0, 0}, {1152, 1466}}</string>
+		<string>{{0, 0}, {1152, 733}}</string>
 		<key>Class</key>
 		<string>SolidGraphic</string>
 		<key>FontInfo</key>
@@ -100,6 +100,47 @@
 			<key>Tail</key>
 			<dict>
 				<key>ID</key>
+				<integer>5</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>Class</key>
+			<string>LineGraphic</string>
+			<key>Head</key>
+			<dict>
+				<key>ID</key>
+				<integer>3</integer>
+				<key>Info</key>
+				<integer>16</integer>
+			</dict>
+			<key>ID</key>
+			<integer>29</integer>
+			<key>Points</key>
+			<array>
+				<string>{851.75, 65.000008106231789}</string>
+				<string>{938.75, 62.200007438659661}</string>
+			</array>
+			<key>Style</key>
+			<dict>
+				<key>stroke</key>
+				<dict>
+					<key>Cap</key>
+					<integer>0</integer>
+					<key>HeadArrow</key>
+					<string>BarBall</string>
+					<key>Join</key>
+					<integer>0</integer>
+					<key>Legacy</key>
+					<true/>
+					<key>TailArrow</key>
+					<string>0</string>
+				</dict>
+			</dict>
+			<key>Tail</key>
+			<dict>
+				<key>ID</key>
+				<integer>6</integer>
+				<key>Info</key>
 				<integer>5</integer>
 			</dict>
 		</dict>
@@ -1043,13 +1084,13 @@ admin_lu (array)}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs24 \cf0 User\
-user_id\
-first_name\
-last_name\
-type\
-email\
-password\
-location_id_lu\
+user_id (int)\
+first_name (string)\
+last_name (string)\
+type (string)\
+email (string)\
+password (string)\
+location_id_lu (fk)\
 search_id_lu (array)\
 resume_id_lu (array)}</string>
 				<key>VerticalPad</key>
@@ -1109,7 +1150,7 @@ resume_id_lu (array)}</string>
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2013-06-23 17:31:12 +0000</string>
+	<string>2013-06-23 19:01:26 +0000</string>
 	<key>Modifier</key>
 	<string>Mark Connolly</string>
 	<key>NotesVisible</key>
@@ -1177,7 +1218,7 @@ resume_id_lu (array)}</string>
 	<key>UseEntirePage</key>
 	<false/>
 	<key>VPages</key>
-	<integer>2</integer>
+	<integer>1</integer>
 	<key>WindowInfo</key>
 	<dict>
 		<key>CurrentSheet</key>
@@ -1204,7 +1245,7 @@ resume_id_lu (array)}</string>
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{-457, 0}, {2066, 917}}</string>
+		<string>{{-457, -92}, {2066, 917}}</string>
 		<key>Zoom</key>
 		<real>1</real>
 		<key>ZoomValues</key>
