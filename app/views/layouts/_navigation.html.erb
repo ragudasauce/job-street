@@ -1,6 +1,6 @@
 		<div id="navigation">
 			<div id="logo"><%= image_tag("logo-jobstreet-3.png", :alt => "") %></div>
-			<p id="sign_up"><a href="signup.html">sign up</a></p>
+			<p id="sign_up"><%= link_to 'sign up', new_user_path %></p>
 			<div class="controls">
 				<label for="keywords">Keywords <span>job title, skills, or company</span></label>
 				<input type="text" name="keywords">
