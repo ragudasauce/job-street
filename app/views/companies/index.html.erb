@@ -1,0 +1,8 @@
+<h1>Companies</h1>
+<p>Here is a list of all the companies that are looking for job seekers</p>
+
+<% @companies.each do |company| %>
+	<p><%= link_to company.name, company %></p>
+<% end %>
+
+<p><%= link_to 'New', new_company_path %></p>

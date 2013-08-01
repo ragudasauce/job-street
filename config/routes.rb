@@ -2,8 +2,11 @@ JobStreet::Application.routes.draw do
 
 	resources :users
 	resources :jobs
+	resources :companies
+	resources :login
  
   get "home/index"
+ # get "login/index"
 
 
   # The priority is based upon order of creation:

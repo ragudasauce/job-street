@@ -1,0 +1,18 @@
+<%= form_for(@company) do |f| %>
+	<p><%= f.label :name, "Company name" %> : <%= f.text_field :name %></p>
+	<!-- other info here DUNS? -->
+	<h2>Address</h2>
+	
+	<!-- include location form here -->
+	
+	<h2>Industries</h2>
+	
+	<!-- form for industries here  -->
+	
+	<h2>Admins</h2>
+	
+	<!-- User form ? maybe take email and search db? -->
+	
+	<p><%= f.submit %></p>
+	
+<% end %>

@@ -9,6 +9,17 @@ class UsersController < ApplicationController
 	end
 	
 	
+	def login
+	
+		@user= User.new
+		
+		respond_to do |format|
+			format.html
+			format.json {render json: @user}
+		end
+	end
+	
+	
 	def show
 		@user = User.find(params[:id])
 		
