@@ -5,22 +5,16 @@ class LoginController < ApplicationController
 	end
 	
 	def create
-		# seems wrong but this is the only route I can post to with this controller_class_name
+		user = User.authenticate(params[:email], params[:password])
 		
-		@login = User.where('users_email = :email AND users_password = :password', 
-			{email: params[:email], password: params[:password]})
-			
-			
-		respond_to do |format|	
-			if (@user.save)
-				format.html
-			else 
-				format.html { render action => "index" }
-			end
+		if (user)
+			session[:user_id] = user.id
+			redirect_to root_ur, :notice => 'logged in'
+		else 
+		
+			flash.now.alert = "invalid email or password"
+			render "new"
 		end
-
-				
-		#debug(@login);
 		
 	end
 end
