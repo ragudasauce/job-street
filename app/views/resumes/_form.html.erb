@@ -1,0 +1,4 @@
+<%= form_for([@user, @user.resumes.build]) do |f| %>
+	<p><%= f.label :name %>: <%= f.text_field :name %></p>
+	<p><%= f.submit %></p>
+<% end %>

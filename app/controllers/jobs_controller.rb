@@ -23,6 +23,7 @@ class JobsController < ApplicationController
 	
 	def edit
 		@job = Job.find(params[:id])
+		@user = session[:user_id] ? User.find(session[:user_id]) : nil
 		
 	end
 	

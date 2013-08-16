@@ -2,3 +2,17 @@
 <p>Last name: <%= @user.last_name %></p>
 <p>email: <%= @user.email %></p>
 <p><%= link_to 'Edit', edit_user_path(@user) %></p>
+
+<h2>Resume</h2>
+		<%= debug(@user) %>
+
+<% if @user.resumes.count > 0 %>
+	<% @user.resumes.each do |resume| %>
+	<%= debug(resume) %>
+		<p><%= link_to resume.name, [resume.user, resume] %></p>
+	<% end %>
+<% else %>
+	<p><%= link_to 'Add a resume', new_user_resume_path(@user) %></p>
+<% end %>
+
+

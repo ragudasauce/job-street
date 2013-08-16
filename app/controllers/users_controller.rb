@@ -7,18 +7,7 @@ class UsersController < ApplicationController
 			format.json {render json: @users}
 		end
 	end
-	
-	
-	def login
-	
-		@user= User.new
 		
-		respond_to do |format|
-			format.html
-			format.json {render json: @user}
-		end
-	end
-	
 	
 	def show
 		@user = User.find(params[:id])
@@ -65,7 +54,7 @@ class UsersController < ApplicationController
 		@user = User.find(params[:id])
 		
 		respond_to do |format|
-			if @user.update_attributes(params[:post])
+			if @user.update_attributes(params[:user])
 				format.html { redirect_to @user, notice: 'User was successfully updated' }
 				format.json { head :no_content }
 			else
